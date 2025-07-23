@@ -11,8 +11,8 @@ public class Gerador {
         String especiais = "+=!@#$%&*()-_[]{}|;:\"<>,./?\\";
         StringBuilder caracteres = new StringBuilder(letrasMinusculas); // Sempre minúsculas
 
-        if (parametros.contains("V")) caracteres.append(letrasMaiusculas);
-        if (parametros.contains("F")) caracteres.append(numeros);
+        if (parametros.contains("M")) caracteres.append(letrasMaiusculas);
+        if (parametros.contains("N")) caracteres.append(numeros);
         if (parametros.contains("E")) caracteres.append(especiais);
 
         StringBuilder senha = new StringBuilder();

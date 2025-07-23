@@ -16,7 +16,7 @@ public class InterfaceGrafica extends Application {
         Label labelQuantidade = new Label("Quantidade de senhas:");
         TextField campoQuantidade = new TextField("5");
 
-        Label labelTamanho = new Label("Tamanho das senhas:");
+        Label labelTamanho = new Label("Dígitos:");
         TextField campoTamanho = new TextField("10");
 
         CheckBox maiusculas = new CheckBox("Incluir letras maiúsculas");
@@ -34,8 +34,8 @@ public class InterfaceGrafica extends Application {
                 int quantidade = Integer.parseInt(campoQuantidade.getText());
 
                 StringBuilder parametros = new StringBuilder();
-                if (maiusculas.isSelected()) parametros.append("V");
-                if (numeros.isSelected()) parametros.append("F");
+                if (maiusculas.isSelected()) parametros.append("M");
+                if (numeros.isSelected()) parametros.append("N");
                 if (especiais.isSelected()) parametros.append("E");
 
                 String[] senhas = gerador.gerarSenhasArray(quantidade, tamanho, parametros.toString());
