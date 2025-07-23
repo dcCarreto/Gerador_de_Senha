@@ -46,7 +46,7 @@ public class Coletor {
             System.out.println("Quantos dígitos usar? (ex. 100)");
             try {
                 int valor = scan.nextInt();
-                scan.nextLine(); // limpar buffer
+                scan.nextLine();
                 return valor;
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Digite um número inteiro.");
@@ -60,7 +60,7 @@ public class Coletor {
             System.out.println("Quantas senhas deseja gerar? (ex. 6)");
             try {
                 int valor = scan.nextInt();
-                scan.nextLine(); // limpar buffer
+                scan.nextLine();
                 return valor;
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Digite um número inteiro.");
