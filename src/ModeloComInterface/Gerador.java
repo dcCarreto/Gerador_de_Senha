@@ -1,4 +1,4 @@
-package Mecanica;
+package ModeloComInterface;
 
 import java.util.Random;
 

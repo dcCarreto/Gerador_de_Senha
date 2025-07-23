@@ -1,4 +1,4 @@
-package Mecanica;
+package ModeloComInterface;
 
 import javafx.application.Application;
 import javafx.geometry.Insets;
